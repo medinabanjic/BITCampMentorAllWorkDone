@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;ba.bitcamp.exercises.datastructures.Singer&apos; to &apos;Artist&apos;&#x0A;- Original project: &apos;DataStructures&apos;&#x0A;- Original element: &apos;ba.bitcamp.exercises.datastructures.Singer&apos;&#x0A;- Renamed element: &apos;ba.bitcamp.exercises.datastructures.Artist&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;Singer&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;ba.bitcamp.exercises.datastructures{Singer.java[Singer" matchStrategy="1" name="Artist" qualified="false" references="true" similarDeclarations="false" stamp="1434098946896" textual="false" version="1.0"/>
+</session>

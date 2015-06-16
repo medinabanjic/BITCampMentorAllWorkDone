@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Inline local variable &apos;Ai5.main().inpu&apos; in &apos;Ai5.main()&apos;&#x0A;- Original project: &apos;Program1&apos;&#x0A;- Original element: &apos;Ai5.main().inpu&apos;" description="Inline local variable &apos;inpu&apos;" id="org.eclipse.jdt.ui.inline.temp" input="/src&lt;{Ai5.java" selection="358 29" stamp="1432048062710" version="1.0"/>
+</session>

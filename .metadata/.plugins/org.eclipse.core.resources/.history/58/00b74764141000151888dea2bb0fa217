@@ -1,0 +1,40 @@
+package com.bitcamp.klase;
+
+public class Test {
+
+	
+	public static void getOlderPerson(String[] p1, String[] p2){
+		
+		if (Integer.parseInt(p1[2]) > Integer.parseInt(p2[2])){
+			
+			printer(p2);
+			
+		}
+		
+		else{
+			
+			printer(p1);
+		}
+		
+	}
+	
+	
+	public static void printer(String[] printable){
+		System.out.println("Starija osoba je: \n");
+		System.out.println(printable[0]);
+		System.out.println(printable[1]);
+		System.out.println(printable[3]);
+		System.out.println(printable[4]);
+	}
+	public static void main(String[] args) {
+		String[] person1 = {"Tarik", "Celik", "1986", "Jadranska 9", "LK: A16F00A"};
+		
+		String[] person2 = {"John", "Doe", "1946", "Radiceva 2", "LK: B13E66Y"};
+	
+		getOlderPerson(person1, person2);
+	
+	}
+
+	}
+
+

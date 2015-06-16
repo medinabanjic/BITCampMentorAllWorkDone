@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="java.lang.String"/>
+<fullyQualifiedTypeName name="java.lang.Integer"/>
+<fullyQualifiedTypeName name="java.lang.System"/>
+<fullyQualifiedTypeName name="java.awt.Graphics"/>
+<fullyQualifiedTypeName name="java.util.IllegalFormatException"/>
+<fullyQualifiedTypeName name="bitcamp.ba.twentyfifth.medina.TextIO"/>
+<fullyQualifiedTypeName name="java.util.Scanner"/>
+<fullyQualifiedTypeName name="ba.bitcamp.medina.TextIO"/>
+<fullyQualifiedTypeName name="bitcamp.ba.medina.javadoc.Font"/>
+<fullyQualifiedTypeName name="java.awt.Font"/>
+<fullyQualifiedTypeName name="java.awt.Color"/>
+<fullyQualifiedTypeName name="java.lang.ArrayIndexOutOfBoundsException"/>
+<fullyQualifiedTypeName name="java.util.InputMismatchException"/>
+<fullyQualifiedTypeName name="java.lang.Character"/>
+<fullyQualifiedTypeName name="ba.bitcamp.exercises.datastructures.Song"/>
+<fullyQualifiedTypeName name="ba.bitcamp.exercises.datastructures.Album"/>
+<fullyQualifiedTypeName name="java.util.Arrays"/>
+<fullyQualifiedTypeName name="ba.bitcamp.exercises.datastructures.Artist"/>
+<fullyQualifiedTypeName name="CreditCard"/>
+</qualifiedTypeNameHistroy>

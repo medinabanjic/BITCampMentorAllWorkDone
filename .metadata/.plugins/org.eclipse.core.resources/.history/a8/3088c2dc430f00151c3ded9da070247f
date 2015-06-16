@@ -1,0 +1,37 @@
+package ba.bitcamp.S04D01;
+
+public class MultipleArrays {
+
+	public static void printArray(int[] array){
+		
+		for (int i = 0; i < array.length; i++){
+			array[i]= 0;	
+		}
+	}
+	
+	public static void print2DArray(int [][] array){
+		for(int i = 0; i < array.length; i++){
+			for (int j = 0; j< array[i].length; j++){
+				System.out.print(array[i][j]+" ");
+			}
+			
+		}
+		
+	}
+	public static void main(String[] args) {
+		int[] array = new int[3];
+		int[] [] matrix = new int[4][2];
+		
+		printArray(array);
+		
+		for (int el:array){
+			System.out.print(el);
+		}
+		
+		print2DArray(matrix);
+		
+		
+
+	}
+
+}

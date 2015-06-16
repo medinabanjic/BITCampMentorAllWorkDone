@@ -1,0 +1,22 @@
+package ba.bitcamp.S04D01;
+
+import java.util.Scanner;
+
+public class MatrixHelp {
+
+	public static void getInput(int[][] array) {
+
+		Scanner in = new Scanner(System.in);
+
+		for (int i = 0; i < array.length; i++) {
+			for (int j = 0; j < array[i].length; j++) {
+				System.out.printf(
+						"Which number do you want to input in [%d] [%d]: \n",
+						i, j);
+				int x = in.nextInt();
+				array[i][j] = x;
+
+			}
+		}
+	}
+}

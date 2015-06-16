@@ -1,0 +1,23 @@
+package ba.bitcamp.arrays;
+
+public class Ass3 {
+
+	public static String names(){
+		
+		TextIO.readFile("src/ba/bitcamp/arrays/names.in");
+		
+		while(!TextIO.eof()){
+			
+			while ()
+			
+		}
+		
+		
+	}
+	
+	public static void main(String[] args) {
+		TextIO.writeFile(fileName);
+
+	}
+
+}
