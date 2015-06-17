@@ -5,7 +5,7 @@ public class Printer {
 	private String name;
 	private int paperCapacity;
 	private int tintCapacity;
-	private int printedPages;
+	private  int printedPages;
 	public static int totalPagesPrinted;
 
 	/**
@@ -94,7 +94,8 @@ public class Printer {
 	 * 
 	 * @param pages
 	 */
-	public void printPage(int pages) {
+	public int printPage(int pages) {
+		printedPages = 0;
 		while (paperCapacity >= 1 && tintCapacity >= 3 && pages > 0) {
 			printedPages += 1;
 			totalPagesPrinted++;
@@ -102,6 +103,7 @@ public class Printer {
 			paperCapacity -= 1;
 			tintCapacity -= 3;
 		}
+		return pages - printedPages;
 	}
 
 	/**

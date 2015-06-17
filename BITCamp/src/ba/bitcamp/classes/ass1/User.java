@@ -17,8 +17,8 @@ public class User {
 	public User(String name, String surname, Integer age) {
 		super();
 		this.name = name;
-		this.surname = surname;
-		this.age = age;
+		this.setSurname(surname);
+		this.setAge(age);
 		this.ID = ++userCount;
 	}
 	
@@ -32,6 +32,21 @@ public class User {
 	
 	public int getID(){
 		return ID;
+	}
+
+
+	public String getSurname() {
+		return surname;
+	}
+
+
+	public void setSurname(String surname) {
+		this.surname = surname;
+	}
+
+
+	public Integer getAge() {
+		return age;
 	}
 	
 	
