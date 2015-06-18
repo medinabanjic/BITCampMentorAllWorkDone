@@ -1,0 +1,34 @@
+package ba.bitcamp.classes.ass2;
+
+public class Point {
+
+	private int x;
+	private int y;
+	private double distance;
+
+	public Point(int x, int y) {
+		super();
+		this.x = x;
+		this.y = y;
+	}
+
+	public String toString() {
+		String s = "";
+		s = "X: " + x + "\n";
+		s += "Y: " + y + "\n";
+
+		return s;
+	}
+
+	public boolean Equals(Point otherPoint) {
+
+		boolean isEqual;
+		if (this.x == otherPoint.x && this.y == otherPoint.y) {
+			isEqual = true;
+		} else {
+			isEqual = false;
+		}
+		return isEqual;
+	}
+
+}

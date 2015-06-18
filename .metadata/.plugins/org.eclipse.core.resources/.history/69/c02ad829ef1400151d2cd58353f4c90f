@@ -1,0 +1,31 @@
+package ba.bitcamp.exercises.ass5;
+
+public class Battery {
+
+	private String name;
+	private int batteryLeft;
+	private double chargingSpeed;
+
+	public Battery(String name, double chargingSpeed) {
+		super();
+		this.name = name;
+		this.batteryLeft = 50;
+		this.chargingSpeed = chargingSpeed;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public int getBatteryLeft() {
+		return batteryLeft;
+	}
+
+	public void chargeBattery(int minutes) {
+		batteryLeft += minutes;
+		if (batteryLeft + minutes > 100) {
+			batteryLeft = 100;
+		}
+	}
+
+}

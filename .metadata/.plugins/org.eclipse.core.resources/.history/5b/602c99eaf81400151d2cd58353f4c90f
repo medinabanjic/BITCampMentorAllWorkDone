@@ -1,0 +1,11 @@
+package ba.bitcamp.exercises.ass6;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Anthenna a = new Anthenna("RMHD", 10);
+
+		System.out.println("Has the signal been received and does it have a sense: " + Anthenna.incomingSignal(2,"CAL38762183533"));
+	}
+
+}

@@ -1,0 +1,25 @@
+package ba.bitcamp.exercises.ass3;
+
+public class PrinterNetwork {
+
+	private static Printer[] network;
+
+	public PrinterNetwork(Printer[] network) {
+		PrinterNetwork.network = network;
+	}
+
+	public static void coordinatePrinting(int n) {
+		while (n > 0) {
+			for (int j = 0; j < network.length; j++) {
+
+				n = network[j].printPage(n);
+
+				if (n < 1) {
+					break;
+				}
+				System.out.println(n);
+			}
+
+		}
+	}
+}

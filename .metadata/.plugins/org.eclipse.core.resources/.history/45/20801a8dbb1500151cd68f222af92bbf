@@ -1,0 +1,12 @@
+package ba.bitcamp.exercises.ass9_11;
+
+import ba.bitcamp.exercises.ass9_10.StationaryComputer;
+
+public class Workstation extends StationaryComputer{
+	
+	private int numberOfDisplays;
+	private int numberOfProcessorCores;
+	private boolean hasEECmemory;
+	
+	
+}

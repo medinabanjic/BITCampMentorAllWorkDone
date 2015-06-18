@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete 17 resources" deleteContents="false" description="Delete 17 resources" element1="/Arrays" element10="/InputOutput" element11="/JavaDoc" element12="/ObjectsMethods" element13="/Program1" element14="/Switch" element15="/Variables" element16="/Varijable" element17="/Zadaci" element2="/Arrays2Dexercises" element3="/Converter" element4="/DataStructures" element5="/DrawingLanguage" element6="/FOR" element7="/GitAndVersioning" element8="/Hello World" element9="/If" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="17" stamp="1434445663464"/>
+</session>

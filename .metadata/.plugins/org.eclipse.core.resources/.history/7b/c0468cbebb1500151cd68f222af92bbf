@@ -1,0 +1,12 @@
+package ba.bitcamp.exercises.ass9_11;
+
+import ba.bitcamp.exercises.ass9_10.PortableComputer;
+
+public class Laptop extends PortableComputer{
+
+	private int numberOfBatteryCells;
+	private boolean hasBluetooth;
+	private boolean hasNumericalKeypad;
+	
+	
+}
