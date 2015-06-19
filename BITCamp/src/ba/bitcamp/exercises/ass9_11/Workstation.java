@@ -8,6 +8,17 @@ public class Workstation extends StationaryComputer {
 	private int numberOfProcessorCores;
 	private boolean hasEECmemory;
 
+	public Workstation(String OS, int RAM, double price, double procesorSpeed,
+			double powerSupplyUnitStrength, int hardDiskCapacity,
+			int numberOfDisplays, int numberOfProcessorCores,
+			boolean hasEECmemory) {
+		super(OS, RAM, price, procesorSpeed, powerSupplyUnitStrength,
+				hardDiskCapacity);
+		this.hasEECmemory = hasEECmemory;
+		this.numberOfDisplays = numberOfDisplays;
+		this.numberOfProcessorCores = numberOfProcessorCores;
+	}
+
 	public int getNumberOfDisplays() {
 		return numberOfDisplays;
 	}
@@ -33,6 +44,7 @@ public class Workstation extends StationaryComputer {
 	}
 
 	public void printTypeInfo() {
+		super.printTypeInfo();
 		System.out
 				.println("\nWorkstation computers are made for science work, with a lot of different calculations."
 						+ " \nThey are much stronger than desktop computers.");

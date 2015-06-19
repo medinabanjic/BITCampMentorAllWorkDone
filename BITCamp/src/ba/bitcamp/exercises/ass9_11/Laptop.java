@@ -8,6 +8,16 @@ public class Laptop extends PortableComputer {
 	private boolean hasBluetooth;
 	private boolean hasNumericalKeypad;
 
+	public Laptop(String OS, int RAM, double price, double weight,
+			double displaySiye, boolean supportsWiFi, int numberOfBatteryCells,
+			boolean hasBluetooth, boolean hasNumericalKeypad) {
+		super(OS, RAM, price, weight, displaySiye, supportsWiFi);
+		this.numberOfBatteryCells = numberOfBatteryCells;
+		this.hasBluetooth = hasBluetooth;
+		this.hasNumericalKeypad = hasNumericalKeypad;
+
+	}
+
 	public int getNumberOfBatteryCells() {
 		return numberOfBatteryCells;
 	}
@@ -33,6 +43,7 @@ public class Laptop extends PortableComputer {
 	}
 
 	public void printTypeInfo() {
+		super.printTypeInfo();
 		System.out
 				.println("\nLaptop computers are made for global use, when it comes to portability."
 						+ " \nTheir main characteristics are portability, connection possibility and battery.");

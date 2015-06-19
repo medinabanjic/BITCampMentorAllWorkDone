@@ -8,6 +8,18 @@ public class DesktopComputer extends StationaryComputer {
 	private boolean isOverclock;
 	private boolean hasOpticalDrive;
 
+	public DesktopComputer(String OS, int RAM, double price,
+			double procesorSpeed, double powerSupplyUnitStrength,
+			int hardDiskCapacity, int freeRAMspaces, boolean isOverclock,
+			boolean hasOpticalDrive) {
+		super(OS, RAM, price, procesorSpeed, powerSupplyUnitStrength,
+				hardDiskCapacity);
+		this.freeRAMspaces = freeRAMspaces;
+		this.isOverclock = isOverclock;
+		this.hasOpticalDrive = hasOpticalDrive;
+
+	}
+
 	public int getFreeRAMspaces() {
 		return freeRAMspaces;
 	}
@@ -33,6 +45,7 @@ public class DesktopComputer extends StationaryComputer {
 	}
 
 	public void printTypeInfo() {
+		super.printTypeInfo();
 		System.out.println("\nDesktop computers are made for global use."
 				+ " \nTheir main idea is configuration possibility.");
 

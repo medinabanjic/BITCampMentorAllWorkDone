@@ -6,6 +6,13 @@ public abstract class PersonalComputer {
 	private int RAM;
 	private double price;
 
+	public PersonalComputer(String OS, int RAM, double price) {
+		super();
+		this.OS = OS;
+		this.RAM = RAM;
+		this.price = price;
+	}
+
 	public void setOS(String oS) {
 		OS = oS;
 	}
@@ -28,6 +35,10 @@ public abstract class PersonalComputer {
 
 	public double getPrice() {
 		return price;
+	}
+	
+	public void printTypeInfo(){
+		System.out.println("\nPersonal computer is described by its OS and some of its components.");
 	}
 
 }
