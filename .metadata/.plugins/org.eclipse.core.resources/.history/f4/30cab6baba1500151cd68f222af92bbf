@@ -1,0 +1,33 @@
+package ba.bitcamp.exercises.ass9;
+
+public class PersonalComputer {
+
+	private String OS;
+	private int RAM;
+	private double price;
+
+	public void setOS(String oS) {
+		OS = oS;
+	}
+
+	public void setRAM(int rAM) {
+		RAM = rAM;
+	}
+
+	public void setPrice(double price) {
+		this.price = price;
+	}
+
+	public String getOS() {
+		return OS;
+	}
+
+	public int getRAM() {
+		return RAM;
+	}
+
+	public double getPrice() {
+		return price;
+	}
+
+}

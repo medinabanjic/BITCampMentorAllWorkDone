@@ -1,0 +1,2 @@
+INDEX VERSION 1.127+/Users/medina.banjic/Documents/workspace/.metadata/.plugins/org.eclipse.jdt.core
+935019906.index

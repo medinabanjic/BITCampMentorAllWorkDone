@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move element &apos;TextIO.java&apos; to &apos;ObjectsMethods/src/ba.bitcamp.medina&apos;&#x0A;- Original project: &apos;If&apos;&#x0A;- Destination element: &apos;ObjectsMethods/src/ba.bitcamp.medina&apos;&#x0A;- Original element: &apos;bitcamp.ba.twentyfifth.medina.TextIO.java&apos;&#x0A;- Update references to refactored element" description="Move compilation unit" destination="=ObjectsMethods/src&lt;ba.bitcamp.medina" element1="/src&lt;bitcamp.ba.twentyfifth.medina{TextIO.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.move" patterns="*" policy="org.eclipse.jdt.ui.moveResources" qualified="false" references="true" stamp="1433431500989" units="1" version="1.0"/>
+</session>

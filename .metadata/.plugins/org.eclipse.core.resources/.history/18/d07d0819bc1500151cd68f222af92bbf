@@ -1,0 +1,11 @@
+package ba.bitcamp.exercises.ass9_11;
+
+import ba.bitcamp.exercises.ass9_10.StationaryComputer;
+
+public class DesktopComputer extends StationaryComputer{
+
+	private int freeRAMspaces;
+	private boolean isOverclock;
+	private boolean hasOpticalDrive;
+	
+}

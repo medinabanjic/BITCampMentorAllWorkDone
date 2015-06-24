@@ -1,0 +1,82 @@
+package ba.bitcamp.exercises.ass4;
+public class Speaker {
+
+	private String name;
+	private double price;
+	private boolean areOn;
+	private int volume;
+	private int batteryUsage;
+
+	public Speaker(String name, double price, int batteryUsage) {
+		this.name = name;
+		this.price = price;
+		this.batteryUsage = batteryUsage;
+		this.volume = 0;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public double getPrice() {
+		return price;
+	}
+
+	public boolean getAreOn() {
+		return areOn;
+	}
+
+	public int volume() {
+		return volume;
+	}
+
+	public void enable() {
+		if (areOn == false) {
+			areOn = true;
+		} else {
+			System.out.println("Speakers are already turned on.");
+		}
+	}
+
+	public void disable() {
+		if (areOn == true) {
+			areOn = false;
+		} else {
+			System.out.println("Speakers are already turned off.");
+		}
+	}
+
+	public void lowerVolume() {
+		if (areOn == true) {
+			volume -= 10;
+			if (volume < 0) {
+				volume = 0;
+			}
+		} else {
+			System.out.println("You need to turn speakers on.");
+		}
+	}
+
+	public void increaseVolume() {
+		if (areOn == true) {
+			volume += 10;
+			if (volume > 100) {
+				volume = 100;
+			}
+		} else {
+			System.out.println("You need to turn speakers on.");
+		}
+	}
+
+	public String toString() {
+		String s = "";
+		s = "\nName: " + name;
+		if (areOn == true) {
+			s += "\nVolume: " + volume;
+		} else {
+			s += "Off";
+		}
+		return s;
+	}
+
+}
