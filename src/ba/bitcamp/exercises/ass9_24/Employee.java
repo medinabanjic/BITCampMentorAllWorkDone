@@ -2,7 +2,7 @@ package ba.bitcamp.exercises.ass9_24;
 
 public class Employee {
 
-	private static int numOfEmployees = 0;
+	private static int numOfEmployees = 1;
 	private int id = 1000 + numOfEmployees;
 
 	private String name;
@@ -53,8 +53,8 @@ public class Employee {
 
 		@Override
 		public String toString() {
-			return "BirthDate [day=" + day + ", month=" + month + ", year="
-					+ year + "]";
+			return "day=" + day + ", month=" + month + ", year="
+					+ year + "";
 		}
 
 		@Override
@@ -152,7 +152,7 @@ public class Employee {
 	@Override
 	public String toString() {
 		return "'" + name + " " + surname + "' [" + gender + "] (" + salary
-				+ "$) {" + date + "}";
+				+ "$) {" + date.toString() + "}";
 	}
 
 }
