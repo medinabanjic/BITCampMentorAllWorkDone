@@ -47,9 +47,7 @@ public class Main {
 			Company.sortBySalary(em);
 			System.out.println(Company.areEmployeesSortedByID(em));
 			Company.addEmployees1(e4, e5);
-			Company.fireEmployee(e3);
-			int id = e3.getId();
-			System.out.println(id);
+			
 			
 
 			for (Employee value : em) {
