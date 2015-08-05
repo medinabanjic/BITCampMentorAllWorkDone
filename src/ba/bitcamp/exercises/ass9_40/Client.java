@@ -1,32 +1,29 @@
-package ba.bitcamp.exercises.ass9_37;
+package ba.bitcamp.exercises.ass9_40;
 
-import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.IOException;
-import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import java.net.Socket;
 import java.net.UnknownHostException;
+import java.util.Scanner;
 
 public class Client {
 
-	@SuppressWarnings({ "resource", "unused" })
+	@SuppressWarnings({ "resource" })
 	public static void main(String[] args) {
 		try {
-			Socket socket = new Socket("10.0.82.98", 8000);
+			Socket socket = new Socket("localhost", 1993);
 			System.out.println("[CLIENT] Connected to localhost.");
-
-			BufferedReader reader = new BufferedReader(new InputStreamReader(
-					socket.getInputStream()));
-			// String text = reader.readLine();
-			// System.out.println(text);
-
+			Scanner sc = new Scanner (System.in);
 			BufferedWriter writer = new BufferedWriter(new OutputStreamWriter(
 					socket.getOutputStream()));
-			// String choice = "";
-			// Scanner in = new Scanner(System.in);
-			// choice = in.nextLine();
-			writer.write("Medina");
+			
+			
+			System.out.println("Input the type of message: ");
+			writer.write(sc.nextInt());
+			
+			System.out.println("Input message: ");
+			writer.write(sc.nextLine());
 			writer.newLine();
 			writer.flush();
 		} catch (UnknownHostException e) {

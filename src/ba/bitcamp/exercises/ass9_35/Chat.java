@@ -3,8 +3,10 @@ package ba.bitcamp.exercises.ass9_35;
 import java.awt.BorderLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.IOException;
+import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import java.net.Socket;
 import java.net.UnknownHostException;
@@ -42,16 +44,23 @@ public class Chat extends JFrame {
 				System.out.println("[CLIENT] Application started.");
 				Socket socket;
 				try {
-					socket = new Socket("10.0.82.17", 1993);
+					socket = new Socket("10.0.82.113", 7321);
 					System.out.println("[CLIENT] Connected to localhost.");
 
 					BufferedWriter writer = new BufferedWriter(new OutputStreamWriter(socket.getOutputStream()));
 					System.out.println("I/O operating available now.");
-
+					
 					writer.write(text);
 					writer.newLine();
 					writer.flush();
 					message.setText("");
+					
+					BufferedReader br = new BufferedReader(new InputStreamReader(socket.getInputStream()));
+					String message = br.readLine();
+					System.out.println(message);
+					
+					
+					
 				} catch (UnknownHostException e1) {
 					// TODO Auto-generated catch block
 					e1.printStackTrace();
